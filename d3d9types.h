@@ -231,7 +231,7 @@
 /**************************** 
  * Vertex Shaders Declaration
  */
-
+/*
 typedef enum _D3DDECLUSAGE {
   D3DDECLUSAGE_POSITION     = 0,
   D3DDECLUSAGE_BLENDWEIGHT  = 1,
@@ -248,12 +248,12 @@ typedef enum _D3DDECLUSAGE {
   D3DDECLUSAGE_DEPTH        = 12,      
   D3DDECLUSAGE_SAMPLE       = 13     
 } D3DDECLUSAGE;
-
+*/
 #define D3DMAXDECLUSAGE         D3DDECLUSAGE_SAMPLE
 #define D3DMAXDECLUSAGEINDEX    15
 #define D3DMAXDECLLENGTH        18
 #define D3DMAXDECLUSAGE_DX8     D3DDECLUSAGE_TEXCOORD
-
+/*
 typedef enum _D3DDECLMETHOD {
   D3DDECLMETHOD_DEFAULT          = 0,
   D3DDECLMETHOD_PARTIALU         = 1,
@@ -263,10 +263,10 @@ typedef enum _D3DDECLMETHOD {
   D3DDECLMETHOD_LOOKUP           = 5,
   D3DDECLMETHOD_LOOKUPPRESAMPLED = 6
 } D3DDECLMETHOD;
-
+*/
 
 #define D3DMAXDECLMETHOD        D3DDECLMETHOD_LOOKUPPRESAMPLED
-
+/*
 typedef enum _D3DDECLTYPE {
   D3DDECLTYPE_FLOAT1    =  0,
   D3DDECLTYPE_FLOAT2    =  1,
@@ -276,7 +276,7 @@ typedef enum _D3DDECLTYPE {
   D3DDECLTYPE_UBYTE4    =  5,
   D3DDECLTYPE_SHORT2    =  6,
   D3DDECLTYPE_SHORT4    =  7,
-  /* VS 2.0 */
+  // VS 2.0
   D3DDECLTYPE_UBYTE4N   =  8,
   D3DDECLTYPE_SHORT2N   =  9,
   D3DDECLTYPE_SHORT4N   = 10,
@@ -288,9 +288,9 @@ typedef enum _D3DDECLTYPE {
   D3DDECLTYPE_FLOAT16_4 = 16,
   D3DDECLTYPE_UNUSED    = 17,
 } D3DDECLTYPE;
-
+*/
 #define D3DMAXDECLTYPE          D3DDECLTYPE_UNUSED
-
+/*
 typedef struct _D3DVERTEXELEMENT9 {
   WORD    Stream;
   WORD    Offset;
@@ -299,7 +299,7 @@ typedef struct _D3DVERTEXELEMENT9 {
   BYTE    Usage;
   BYTE    UsageIndex;
 } D3DVERTEXELEMENT9, *LPD3DVERTEXELEMENT9;
-
+*/
 
 typedef enum _D3DQUERYTYPE {
     D3DQUERYTYPE_VCACHE = 4,
@@ -676,7 +676,7 @@ typedef enum _D3DBASISTYPE {
 
    D3DBASIS_FORCE_DWORD   = 0x7fffffff
 } D3DBASISTYPE;
-
+/*
 typedef enum _D3DBLEND {
     D3DBLEND_ZERO               =  1,
     D3DBLEND_ONE                =  2,
@@ -722,7 +722,7 @@ typedef enum _D3DCMPFUNC {
 
     D3DCMP_FORCE_DWORD          = 0x7fffffff
 } D3DCMPFUNC;
-
+*/
 typedef enum _D3DCUBEMAP_FACES {
     D3DCUBEMAP_FACE_POSITIVE_X     = 0,
     D3DCUBEMAP_FACE_NEGATIVE_X     = 1,
@@ -733,7 +733,7 @@ typedef enum _D3DCUBEMAP_FACES {
 
     D3DCUBEMAP_FACE_FORCE_DWORD    = 0xffffffff
 } D3DCUBEMAP_FACES;
-
+/*
 typedef enum _D3DCULL {
     D3DCULL_NONE                = 1,
     D3DCULL_CW                  = 2,
@@ -741,7 +741,7 @@ typedef enum _D3DCULL {
 
     D3DCULL_FORCE_DWORD         = 0x7fffffff
 } D3DCULL;
-
+*/
 typedef enum _D3DDEBUGMONITORTOKENS {
     D3DDMT_ENABLE          = 0,
     D3DDMT_DISABLE         = 1,
@@ -766,7 +766,7 @@ typedef enum _D3DDEVTYPE {
 
     D3DDEVTYPE_FORCE_DWORD = 0xffffffff
 } D3DDEVTYPE;
-
+/*
 typedef enum _D3DFILLMODE {
     D3DFILL_POINT               = 1,
     D3DFILL_WIREFRAME           = 2,
@@ -774,7 +774,7 @@ typedef enum _D3DFILLMODE {
 
     D3DFILL_FORCE_DWORD         = 0x7fffffff
 } D3DFILLMODE;
-
+*/
 typedef enum _D3DFOGMODE {
     D3DFOG_NONE                 = 0,
     D3DFOG_EXP                  = 1,
@@ -783,7 +783,7 @@ typedef enum _D3DFOGMODE {
 
     D3DFOG_FORCE_DWORD          = 0x7fffffff
 } D3DFOGMODE;
-
+/*
 typedef enum _D3DFORMAT {
     D3DFMT_UNKNOWN              =   0,
 
@@ -850,12 +850,12 @@ typedef enum _D3DFORMAT {
     D3DFMT_INDEX16              = 101,
     D3DFMT_INDEX32              = 102,
     D3DFMT_Q16W16V16U16         = 110,
-    /* Floating point formats */
+    // Floating point formats
     D3DFMT_R16F                 = 111,
     D3DFMT_G16R16F              = 112,
     D3DFMT_A16B16G16R16F        = 113,
     
-    /* IEEE formats */
+    // IEEE formats
     D3DFMT_R32F                 = 114,
     D3DFMT_G32R32F              = 115,
     D3DFMT_A32B32G32R32F        = 116,
@@ -877,7 +877,7 @@ typedef enum _D3DLIGHTTYPE {
 
     D3DLIGHT_FORCE_DWORD    = 0x7fffffff
 } D3DLIGHTTYPE;
-
+*/
 typedef enum _D3DMATERIALCOLORSOURCE {
     D3DMCS_MATERIAL         = 0,
     D3DMCS_COLOR1           = 1,
@@ -933,7 +933,7 @@ typedef enum _D3DPOOL {
 
     D3DPOOL_FORCE_DWORD             = 0x7fffffff
 } D3DPOOL;
-
+/*
 typedef enum _D3DPRIMITIVETYPE {
     D3DPT_POINTLIST             = 1,
     D3DPT_LINELIST              = 2,
@@ -1052,7 +1052,7 @@ typedef enum _D3DRENDERSTATETYPE {
 
     D3DRS_FORCE_DWORD               = 0x7fffffff
 } D3DRENDERSTATETYPE;
-
+*/
 typedef enum _D3DRESOURCETYPE {
     D3DRTYPE_SURFACE                =  1,
     D3DRTYPE_VOLUME                 =  2,
@@ -1066,7 +1066,7 @@ typedef enum _D3DRESOURCETYPE {
 } D3DRESOURCETYPE;
 
 #define D3DRTYPECOUNT (D3DRTYPE_INDEXBUFFER+1)
-
+/*
 typedef enum _D3DSHADEMODE {
     D3DSHADE_FLAT               = 1,
     D3DSHADE_GOURAUD            = 2,
@@ -1074,7 +1074,7 @@ typedef enum _D3DSHADEMODE {
 
     D3DSHADE_FORCE_DWORD        = 0x7fffffff
 } D3DSHADEMODE;
-
+*/
 typedef enum _D3DSTATEBLOCKTYPE {
     D3DSBT_ALL           = 1,
     D3DSBT_PIXELSTATE    = 2,
@@ -1082,7 +1082,7 @@ typedef enum _D3DSTATEBLOCKTYPE {
 
     D3DSBT_FORCE_DWORD   = 0xffffffff
 } D3DSTATEBLOCKTYPE;
-
+/*
 typedef enum _D3DSTENCILOP {
     D3DSTENCILOP_KEEP           = 1,
     D3DSTENCILOP_ZERO           = 2,
@@ -1211,7 +1211,7 @@ typedef enum _D3DTRANSFORMSTATETYPE {
 
     D3DTS_FORCE_DWORD     = 0x7fffffff
 } D3DTRANSFORMSTATETYPE;
-
+*/
 typedef enum _D3DVERTEXBLENDFLAGS {
     D3DVBF_DISABLE  =   0,
     D3DVBF_1WEIGHTS =   1,
@@ -1228,7 +1228,7 @@ typedef enum _D3DZBUFFERTYPE {
 
     D3DZB_FORCE_DWORD           = 0x7fffffff
 } D3DZBUFFERTYPE;
-
+/*
 typedef enum _D3DSAMPLERSTATETYPE {
     D3DSAMP_ADDRESSU       = 1,
     D3DSAMP_ADDRESSV       = 2,
@@ -1246,7 +1246,7 @@ typedef enum _D3DSAMPLERSTATETYPE {
                                 
     D3DSAMP_FORCE_DWORD   = 0x7fffffff,
 } D3DSAMPLERSTATETYPE;
-
+*/
 
 /*****************************************************************************
  * Direct 3D v9 typedefs
@@ -1381,13 +1381,13 @@ typedef struct _D3DDISPLAYMODE {
     UINT            RefreshRate;
     D3DFORMAT       Format;
 } D3DDISPLAYMODE;
-
+/*
 typedef struct _D3DGAMMARAMP {
     WORD                red  [256];
     WORD                green[256];
     WORD                blue [256];
 } D3DGAMMARAMP;
-
+*/
 typedef struct _D3DINDEXBUFFER_DESC {
     D3DFORMAT           Format;
     D3DRESOURCETYPE     Type;
